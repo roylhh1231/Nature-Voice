@@ -313,6 +313,7 @@ GameObject:
   - component: {fileID: 961739752}
   - component: {fileID: 961739751}
   - component: {fileID: 961739750}
+  - component: {fileID: 961739754}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -431,13 +432,34 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961739749}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.31627944, y: 0.0029287664, z: -0.0009890388, w: -0.948661}
-  m_LocalPosition: {x: 0.028090604, y: 1.2661963, z: -1.9069378}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.012, y: 0.85, z: -0.056}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &961739754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961739749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cbf98ba3fd08824da3c1e3bd783ea72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxForwardOffset: 3
+  pinchSensitivity: 0.01
+  positionLerpSpeed: 10
+  minYPosition: 0.5
+  focusPlaneHeight: 0
+  focusLerpSpeed: 10
+  panActivationThreshold: 0.05
+  enableMouseWheelZoom: 1
+  scrollSensitivity: 1
 --- !u!114 &990311436 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7789967098802134981, guid: d8f0fb490983e0e4e94e788ce8775730, type: 3}
